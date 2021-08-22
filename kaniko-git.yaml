@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/haplolabs/kaniko-demo",
-            "--destination=nthompson66/devops-toolkit:1.0.0"]
+            "--destination=haplolabs.jfrog.io/haplolabs-docker/nthompson66/devops-toolkit:1.0.0"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
